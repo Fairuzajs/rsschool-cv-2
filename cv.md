@@ -22,3 +22,6 @@
     + HTML
     + CSS
     + Java Script
+## Language
+* English: pre-intermadiate
+* Russia: native
