@@ -8,20 +8,17 @@
 * HTML
 * CSS
 * JavaScript
-* GIT/GITHUB
-* SQL
-* MS Office
+
+    + TypeScript
+    + sass/scss
+    + webpack
+    + git/GitHub
 ## Education
 1. Ufa State Petroleum Technological University
     + Geology and Exploration of oil and gas fields
 2. IT school "Orbita"
     + Mental Math Instructor
-3. HTML Academiya
-    + "HTML. CSS"
-4. Code-basics free courses
-    + HTML
-    + CSS
-    + Java Script
+//
 ## Language
 * English: pre-intermadiate
 * Russia: native
