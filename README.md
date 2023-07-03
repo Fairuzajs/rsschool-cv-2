@@ -1,1 +1,1 @@
-# rsschool_cv
+https://Fairuzajs.github.io/rsschool-cv/
