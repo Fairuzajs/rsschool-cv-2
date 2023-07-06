@@ -152,6 +152,23 @@
     }
   }
 
+  /* language */
+
+  .language {
+    padding: 50px 0px;
+    background-color: #1a1212;
+    color: #fafafa;
+   
+  }
+ 
+  .lang {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
   /* footer */
   footer {
     background: #ffaf03;
@@ -194,11 +211,3 @@
     width: 35px;
   }
   
-  .language {
-    padding: 50px 0px;
-    background-color: #1a1212;
-    color: #fafafa;
-    display: flex;
-    justify-content: center;
-  }
- 
