@@ -108,7 +108,9 @@
     padding-left: 20vw;
     padding-right: 20vw;
   }
-  
+
+  /*  skills */
+
   .skills {
     background-color: #ffaf03;
     padding-top: 50px;
@@ -130,7 +132,9 @@
     width: 70px;
     height: 70px;
   }
-  .skills-block .skill {
+
+
+  .skills-block>li {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -147,59 +151,88 @@
       color: #ffaf03;
     }
   }
+
+    /* my project */
+
+    .projects {
+        background-color: #1a1212;
+    }
+      /* code */
+      .code {
+        background-color: #ffaf03;
+      }
+  /* education */
+  .education {
+    background-color: #1a1212;
+    padding: 50px 0px;
+}
+  
+  /* language */
+
+
+  .language {
+    padding: 50px 0px;
+    background-color: #ffaf03;
+    color: #fafafa;
+   
+  }
+ 
+  .lang {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+    /* contact */
+.contacts {
+    background-color: #1a1212;
+}
+  /* footer */
   footer {
-    background: #ffaf03;
+    background-color: #ffaf03;
   }
   
   .footer {
     padding: 50px 0px;
+    
+  }
+  .footer p {
+    padding-top: 20px;
+    font-size: 12px;
   }
   
-  .rsschool {
+  .link {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 60px;
   }
-  .rsschool .rss img {
+  .link .rss img {
     width: 120px;
   }
-  .rsschool .github img {
+  .link .github img {
     width: 35px;
   }
-  .rsschool .my-link {
+
+  .my-link {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
+    width: 100%;
   }
-  .rsschool .my-link .link-soc {
+
+  .my-link-social {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .link .my-link .link-soc {
     width: 35px;
   }
   
-  .language {
-    padding: 50px 0px;
-    background-color: #1a1212;
-    color: #fafafa;
-    display: flex;
-    justify-content: center;
-  }
-  .language table {
-    width: 70vw;
-    border: 0.5px solid #ffaf03;
-    border-collapse: separate;
-    border-radius: 4px;
-    border-spacing: 10px;
-  }
-  .language td {
-    border: 2px solid #ffaf03;
-    border-radius: 4px;
-    border-spacing: 10px;
-    padding: 10px 50px;
-  }
-  .language th {
-    border: 2px dotted #ffaf03;
-    padding: 15px;
-    font-size: 24px;
-  }
