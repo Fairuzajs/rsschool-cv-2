@@ -11,7 +11,8 @@
         <div class="wrapper">
             <div class="header">
                 <div class="logo">
-                    <p>LOGO</p>
+                    <a href="#">RSSCHOOL-CV</a>
+                    <img src="img/icon/rss-epam.svg" alt="">
                 </div>
                 <nav class="menu">
                     <ul>
@@ -30,7 +31,8 @@
         <div class="wrapper">
           <div class="photo">
             <div class="img-cv">
-                <img src="img/DSC_4445.jpg" alt="photo me">
+                <div class="front"><img src="img/DSC_4445.jpg" alt="photo me"></div>
+                <div class="back"><img src="img/DSC_4683.jpg" alt="photo"></div>
             </div>
             <div class="name">
                 <h1>Fairuza Khuzhakhmetova</h1>
@@ -38,14 +40,14 @@
                 <div class="btn">
                     <a href="mailto:yaubasarova.93@mail.ru">Write me</a>
                     <a href="mailto:79373491649">Call me</a>
-                    <a href="mailto:79373491649">Download</a>
+                    <!-- <a href="mailto:79373491649">Download</a> -->
                 </div>
             </div>
           </div>
         </div>
     </main>     
     <section class="about-me">
-        <div class="wrapper"><a name="about"></a>
+        <div class="wrapper"><a id="about"></a>
             <h2>About me</h2>
             <p>My name is Fairuza. Im future frontend Developer. When I styy in 11 st, I did my firsr web-site for my school in my village. I used to basic HTML anf CSS.  
                 And now I study in Rolling Scopes School and I so happy! This course is very hard, but more interesting. I like do layot, animate web-page and do responsive design!
@@ -54,23 +56,23 @@
         </div> 
     </section>
     <section class="skills">
-        <div class="wrapper"><a name="skills"></a>
+        <div class="wrapper"><a id="skills"></a>
             <h2>Skills</h2>
           <ul class="skills-block">
             <li>HTML <img src="img/icon/html.svg" alt="html icon"></li>
             <li>CSS <img src="img/icon/css.svg" alt="css"></li>
-            <li>JavaScript <img src="img/icon/javascript.svg" alt=""></li>
-            <li>Figma <img src="img/icon/figma.svg" alt=""></li>
-            <li>PixelPerfect <img src="img/icon/pp.webp" alt=""></li>
-            <li>Git/GitHub <img src="img/icon/github.svg" alt=""></li>
-            <li>Bootstrup <img src="img/icon/bootstrap.svg" alt=""></li>
-            <li>TypeScript <img src="img/icon/ts-logo-128.svg" alt=""></li>
+            <li>JavaScript <img src="img/icon/javascript.svg" alt="js"></li>
+            <li>Figma <img src="img/icon/figma.svg" alt="figma"></li>
+            <li>PixelPerfect <img src="img/icon/pp.webp" alt="pp"></li>
+            <li>Git/GitHub <img src="img/icon/github.svg" alt="icons"></li>
+            <li>Bootstrup <img src="img/icon/bootstrap.svg" alt="icons"></li>
+            <li>TypeScript <img src="img/icon/ts-logo-128.svg" alt="icons"></li>
           </ul>           
         </div>        
     </section>
     <section class="projects">
         <div class="wrapper">
-            <div class="myproject"><a name="project"></a>
+            <div class="myproject"><a id="project"></a>
                 <h2>My project</h2>
                 <div class="project-block">
                   <div class="project-card">
@@ -145,21 +147,38 @@
     </section>
     <section class="code">
         <div class="wrapper">
-            <h2>Code</h2><a name="code"></a>
-        </div>
-       
+            <h2>Code</h2><a id="code"></a>
+            <div class="code-block">
+                <p>In this kata you should simply determine, whether a given year is a leap year or not. In case you don't know the rules, here they are:</p>
+                    <ul>
+                        <li>years divisible by 4 are leap years</li>
+                        <li>but years divisible by 100 are not leap years</li>
+                        <li>but years divisible by 400 are leap years.</li>
+                    </ul>         
+                <code>
+                    <pre>
+                        function isLeapYear(year) {
+                            if (year % 100 !== 0 && year % 4 === 0 || year % 400 === 0) {
+                              return true;
+                            } else {
+                              return false;
+                            }
+                          }
+                    </pre>
+                </code>
+            </div>
+        </div>   
     </section>
     <section class="education">
         <div class="wrapper">
-            <h2>Education</h2><a name="education"></a>
+            <h2>Education</h2><a id="education"></a>
             <ol class="edu">
               <li><a href="https://rs.school/js-stage0/">RS School</a><b> "JavaScript/Front-end stage 0"</b></li>
               <li><a href="https://rs.school/js/">RS School</a><b> "JavaScript/Front-end"</b></li>
               <li><a href="https://en.tsu.ru">TGU</a><b> "WEB-programmer from scratch to the first projects"</b></li>
               <li><a href="https://rusoil.net/ru/">USPTU</a><b> geologist</b></li>
             </ol>
-        </div>
-        
+        </div>        
     </section>
     <section class="language">
         <div class="wrapper">
@@ -168,16 +187,27 @@
                 <li>English <b>pre-intermediate</b></li>
                 <li>Russian <b>native</b></li>
             </ol>
-        </div>
-       
+        </div>      
     </section>
     <section class="contacts">
         <div class="wrapper">
-            <h2>Contacts</h2><a name="contact"></a>
+            <h2>Contacts</h2><a id="contact"></a>
+            <div class="contact-me">
+                <div class="contact-me__block">
+                    <a href="mailto:yaubasarova.93">email: yaubasarova.93@mail.ru</a>
+                    <a href="mailto:79373491649">tel: 8 937 349 16 49</a>
+                </div>
+                <!-- <form action="">
+                    <input type="text" name="userName" id="userNameForm" placeholder="Ваше имя">
+                    <textarea name="review" id="reviewForm" cols="30" rows="10" placeholder="Отзыв"></textarea>
+                    <input type="submit" value="Отправить отзыв">
+                    <div class="approval-block">
+                        <input type="checkbox" name="approval" id="approvalForm">
+                    </div>                
+                </form> -->
+            </div>
         </div>
-        <div class="contact-me">
-
-        </div>
+        
     </section>
     <footer>
         <div class="wrapper">
@@ -190,7 +220,7 @@
                                 <ul class="my-link-social">
                                     <li><a href="https://discordapp.com/users/1056131555124330536/ " target="_blank"><img class="link-soc" src="img/icon/discord-red.svg" alt="discord"></a></li>
                                     <li><a href="https://t.me/fairuza2203" target="_blank"><img class="link-soc" src="img/icon/tg.svg" alt="telegram"></a></li>
-                                    <li><a href="https://wa.me/79373491649" target="_blank"><img class="link-soc" src="img/icon/wu.svg" alt=""></a></li> 
+                                    <li><a href="https://wa.me/79373491649" target="_blank"><img class="link-soc" src="img/icon/wu.svg" alt="git"></a></li> 
                                 </ul>
                             </li>
                         </ul>                          
