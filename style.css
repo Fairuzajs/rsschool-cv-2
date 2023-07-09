@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    scroll-behavior: smooth;
   }
   
   .wrapper {
@@ -32,12 +33,32 @@
     padding: 30px;
     align-items: center;
   }
-  .menu ul li {
+  .menu ul li a {
     transition: 0.8s;
+    position: relative;
+    text-decoration: none;
+    color: #fafafa;
   }
-  .menu ul li:hover {
+  .menu ul li a:hover {
     color: #f2bc0c;
     cursor: pointer;
+  }
+
+  .menu ul li a:after {
+    display: block;
+  content: "";
+  color: #fafafa;
+  background-color: #F1CDB3;
+  height: 2px;
+  width: 0%;
+  left: 50%;
+  position: absolute;
+  transition: width 0.6s ease-in-out;
+  transform: translateX(-50%);
+  }
+
+  .menu ul li a:hover:after {
+    width: 100%;
   }
   
   main {
@@ -92,8 +113,18 @@
     z-index: 2;
     box-shadow: -4px -4px 4px #1a1212;
   }
+
+  .img-cv img:hover {
+    cursor: pointer;
+    box-shadow: -8px -4px 4px #144599;
+    transform: scale(1.2);
+  }
+
+  .img-cv:hover {
+    background-color: #000000;
+  }
   
-  .about-me {
+  .about-me { 
     background-color: #1a1212;
     color: #fafafa;
     padding: 20px;
@@ -116,8 +147,15 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
+  .skills h2 {
+    padding-bottom: 20px;
+ 
+  }
   
   .skills-block {
+    margin: 0 auto;
+    max-width: 1150px;
     padding-left: 20vw;
     padding-right: 20vw;
     display: flex;
@@ -125,7 +163,7 @@
     -moz-column-gap: 50px;
          column-gap: 50px;
     row-gap: 30px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
   .skills-block img {
@@ -156,6 +194,60 @@
 
     .projects {
         background-color: #1a1212;
+        color: #fafafa;
+        font-size: 20px;
+       
+    }
+
+    .project-block {
+        padding: 50px 0px;
+        display: flex;
+        column-gap: 60px;
+        row-gap: 30px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .project-card {
+        width: 250px;
+        border: 2px dotted #003d7d;
+        animation: border-anim 2s easy 1s;
+        transition: all 0.8s;
+    }
+    
+    .project-card:hover {
+        cursor: pointer;
+        border: 2px solid #f2bc0c;
+      
+    }
+
+
+    .project-card, .screen {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        padding: 10px 0px;
+    }
+
+    .screen a img {
+        width: 200px;
+        border-radius: 15px 0px;
+        border: 5px solid #f2bc0c;
+        transition: all 1s;
+    }
+
+    .screen a img:hover {
+        border: 5px solid #003d7d;
+        border-radius: 0px 15px;
+    }
+    .screen p {
+        font-size: 16px;
+        color: #cdcdcd;
+        font-style: italic;
+        text-align: center;
     }
       /* code */
       .code {
@@ -165,15 +257,29 @@
   .education {
     background-color: #1a1212;
     padding: 50px 0px;
+    color: #fafafa;
+    
 }
-  
+
+.edu {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 20px;
+}
+  .edu li a {
+    text-decoration: none;
+    color: #fafafa;
+  }
   /* language */
 
 
   .language {
     padding: 50px 0px;
     background-color: #ffaf03;
-    color: #fafafa;
+    color: #1a1212;
    
   }
  
@@ -181,7 +287,7 @@
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     
   }
 
