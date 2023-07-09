@@ -152,11 +152,27 @@
     }
   }
 
+    /* my project */
+
+    .projects {
+        background-color: #1a1212;
+    }
+      /* code */
+      .code {
+        background-color: #ffaf03;
+      }
+  /* education */
+  .education {
+    background-color: #1a1212;
+    padding: 50px 0px;
+}
+  
   /* language */
+
 
   .language {
     padding: 50px 0px;
-    background-color: #1a1212;
+    background-color: #ffaf03;
     color: #fafafa;
    
   }
@@ -169,13 +185,22 @@
     
   }
 
+    /* contact */
+.contacts {
+    background-color: #1a1212;
+}
   /* footer */
   footer {
-    background: #ffaf03;
+    background-color: #ffaf03;
   }
   
   .footer {
     padding: 50px 0px;
+    
+  }
+  .footer p {
+    padding-top: 20px;
+    font-size: 12px;
   }
   
   .link {
