@@ -3,6 +3,11 @@
     padding: 0px;
     margin: 0px;
     scroll-behavior: smooth;
+
+  }
+
+  h2 {
+    text-align: center;
   }
 
   body {
@@ -330,7 +335,7 @@
   
   .skills-block {
     margin: 0 auto;
-    max-width: 1150px;
+    
     padding-left: 20vw;
     padding-right: 20vw;
     display: flex;
@@ -371,6 +376,7 @@
         background-color: #1a1212;
         color: #fafafa;
         font-size: 20px;
+        padding: 50px 0px;
        
     }
 
