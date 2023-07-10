@@ -4,10 +4,14 @@
     margin: 0px;
     scroll-behavior: smooth;
   }
+
+  body {
+    max-width: 1400px;
+  }
   
   .wrapper {
     margin: 0 auto;
-    width: 94%;
+    width: 90%;
   }
   
   header {
@@ -307,8 +311,8 @@
   }
   .about-me p {
     font-size: 20px;
-    padding-left: 20vw;
-    padding-right: 20vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
 
   /*  skills */
