@@ -170,7 +170,7 @@
 
   .logo  img {
     width: 80px;
-    animation: rss-epam 5s infinite linear 1s;
+    animation: rss-epam 3s infinite linear 3s;
   }
 
   @keyframes rss-epam {
