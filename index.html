@@ -7,229 +7,232 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="wrapper">
-            <div class="header">
-                <div class="logo">
-                    <a href="#">RSSCHOOL-CV</a>
-                    <img src="img/icon/rss-epam.svg" alt="">
+
+        <header>
+            <div class="wrapper">
+                <div class="header">
+                    <div class="logo">
+                        <a href="#">RSSCHOOL-CV</a>
+                        <img src="img/icon/rss-epam.svg" alt="">
+                    </div>
+                    <nav class="menu">
+                        <input class="burger-menu" type="checkbox" id="burgerMenu">
+                        <label class="burger-btn" for="burgerMenu">
+                            <span></span>
+                        </label>
+                        <ul class="menu-ul">
+                            <li><a class="menu__link" href="#about">About me</a></li>                       
+                            <li><a  class="menu__link" href="#skills">Skills</a></li>                       
+                            <li><a  class="menu__link" href="#education">Education</a></li>
+                            <li><a  class="menu__link" href="#project">Project</a></li>
+                            <li><a  class="menu__link" href="#code">Code JS</a></li>
+                            <li><a  class="menu__link" href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="menu">
-                    <input class="burger-menu" type="checkbox" id="burgerMenu">
-                    <label class="burger-btn" for="burgerMenu">
-                        <span></span>
-                    </label>
-                    <ul class="menu-ul">
-                        <li><a class="menu__link" href="#about">About me</a></li>                       
-                        <li><a  class="menu__link" href="#skills">Skills</a></li>                       
-                        <li><a  class="menu__link" href="#education">Education</a></li>
-                        <li><a  class="menu__link" href="#project">Project</a></li>
-                        <li><a  class="menu__link" href="#code">Code JS</a></li>
-                        <li><a  class="menu__link" href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+            </div>      
+        </header>
+        <main>
+            <div class="wrapper">
+              <div class="photo">
+                <div class="img-cv">
+                    <div class="front"><img src="img/DSC_4445.jpg" alt="photo me"></div>
+                    <div class="back"><img src="img/DSC_4683.jpg" alt="photo"></div>
+                </div>
+                <div class="name">
+                    <h1>Fairuza Khuzhakhmetova</h1>
+                    <h2>Frontend JS developer</h2>
+                    <div class="btn">
+                        <a href="mailto:yaubasarova.93@mail.ru">Write me</a>
+                        <a href="tel:79373491649">Call me</a>
+                        <!-- <a href="mailto:79373491649">Download</a> -->
+                    </div>
+                </div>
+              </div>
             </div>
-        </div>      
-    </header>
-    <main>
-        <div class="wrapper">
-          <div class="photo">
-            <div class="img-cv">
-                <div class="front"><img src="img/DSC_4445.jpg" alt="photo me"></div>
-                <div class="back"><img src="img/DSC_4683.jpg" alt="photo"></div>
-            </div>
-            <div class="name">
-                <h1>Fairuza Khuzhakhmetova</h1>
-                <h2>Frontend JS developer</h2>
-                <div class="btn">
-                    <a href="mailto:yaubasarova.93@mail.ru">Write me</a>
-                    <a href="tel:79373491649">Call me</a>
-                    <!-- <a href="mailto:79373491649">Download</a> -->
+        </main>     
+        <section class="about-me">
+            <div class="wrapper"><a id="about"></a>
+                <h2>About me</h2>
+                <p>My name is Fairuza. Im future frontend Developer. When I styy in 11 st, I did my firsr web-site for my school in my village. I used to basic HTML anf CSS.  
+                    And now I study in Rolling Scopes School and I so happy! This course is very hard, but more interesting. I like do layot, animate web-page and do responsive design!
+                    I want to Frontend Developer and learn Vue js.
+                </p>
+            </div> 
+        </section>
+        <section class="skills">
+            <div class="wrapper"><a id="skills"></a>
+                <h2>Skills</h2>
+              <ul class="skills-block">
+                <li>HTML <img src="img/icon/html.svg" alt="html icon"></li>
+                <li>CSS <img src="img/icon/css.svg" alt="css"></li>
+                <li>JavaScript <img src="img/icon/javascript.svg" alt="js"></li>
+                <li>Figma <img src="img/icon/figma.svg" alt="figma"></li>
+                <li>PixelPerfect <img src="img/icon/pp.webp" alt="pp"></li>
+                <li>Git/GitHub <img src="img/icon/github.svg" alt="icons"></li>
+                <li>Bootstrup <img src="img/icon/bootstrap.svg" alt="icons"></li>
+                <li>TypeScript <img src="img/icon/ts-logo-128.svg" alt="icons"></li>
+              </ul>           
+            </div>        
+        </section>
+        <section class="projects">
+            <div class="wrapper">
+                <div class="myproject"><a id="project"></a>
+                    <h2>My project</h2>
+                    <div class="project-block">
+                      <div class="project-card">
+                        <h3>Shelter</h3>
+                        <div class="screen">
+                            <a href="https://fairuzajs.github.io/shelter/" target="_blank"><img src="img/shelter.png" alt="web-page"></a>
+                            <details>
+                                <summary>About project</summary>
+                                <p>Responsive web-design, burger-menu, slider, pagination, popup, </p>
+                            </details>
+                           
+                        </div>
+                      </div>
+                      <div class="project-card">
+                        <h3>Plants</h3>
+                        <div class="screen">
+                            <a href="https://fairuzajs.github.io/plants/" target="_blank"><img src="img/plants.png" alt="web-page"></a>
+                            <details>
+                                <summary>About project</summary>
+                                <p>Responsive web-design, options, modal-window</p>
+                            </details>
+                            
+                        </div>
+                      </div>
+                      <div class="project-card">
+                        <h3>Virtual Keyboard</h3>
+                        <div class="screen">
+                            <a href="https://fairuzajs.github.io/virtual-keyboard/" target="_blank"><img src="img/v-keyboard.png" alt="web-page"></a>
+                            <details>
+                                <summary>About project</summary>
+                                <p>Vurtual keyboard withot html tags with js</p>
+                            </details>
+                            
+                        </div>
+                      </div>
+                      <div class="project-card">
+                        <h3>Aperture</h3>
+                        <div class="screen">
+                            <a href="http://m93734mx.beget.tech/pages/task2/task2.html" target="_blank"><img src="img/aperture.png" alt="web-page"></a>
+                            <details>
+                                <summary>About project</summary>
+                                <p>Landing page, responsive web-design</p>
+                            </details>
+                           
+                        </div>
+                      </div>
+                      <div class="project-card">
+                        <h3>Sergio Pizza</h3>
+                        <div class="screen">
+                            <a href="http://m93734mx.beget.tech/pages/finalWork/finalWork.html" target="_blank"><img src="img/pizza.png" alt="web-page"></a>
+                            <details>
+                                <summary>About project</summary>
+                                <p>Responsive web-design, basket buy, slider, modal-form</p>
+                            </details>
+                           
+                        </div>
+                      </div>
+                      <div class="project-card">
+                        <h3>Britlex</h3>
+                        <div class="screen">
+                            <a href="http://m93734mx.beget.tech/pages/task4/task4.html" target="_blank"><img src="img/britlex.png" alt=""></a>
+                            <details>
+                                <summary>About project</summary>
+                                <p>Responsive web-design, flex-box and grid layot, burger-menu</p>
+                            </details>
+                            
+                        </div>
+                      </div>
+                   </div>
+                </div>
+            </div>      
+        </section>
+        <section class="code">
+            <div class="wrapper">
+                <h2>Code</h2><a id="code"></a>
+                <div class="code-block">
+                    <p>In this kata you should simply determine, whether a given year is a leap year or not. In case you don't know the rules, here they are:</p>
+                        <ul>
+                            <li>years divisible by 4 are leap years</li>
+                            <li>but years divisible by 100 are not leap years</li>
+                            <li>but years divisible by 400 are leap years.</li>
+                        </ul>         
+                        <pre>
+                            function isLeapYear(year) {
+                                if (year % 100 !== 0 && year % 4 === 0 || year % 400 === 0) {
+                                  return true;
+                                } else {
+                                  return false;
+                                }
+                              }
+                        </pre>
+                </div>
+            </div>   
+        </section>
+        <section class="education">
+            <div class="wrapper">
+                <h2>Education</h2><a id="education"></a>
+                <ol class="edu">
+                  <li><a href="https://rs.school/js-stage0/">RS School</a><b> "JavaScript/Front-end stage 0"</b></li>
+                  <li><a href="https://rs.school/js/">RS School</a><b> "JavaScript/Front-end"</b></li>
+                  <li><a href="https://en.tsu.ru">TGU</a><b> "WEB-programmer from scratch to the first projects"</b></li>
+                  <li><a href="https://rusoil.net/ru/">USPTU</a><b> geologist</b></li>
+                </ol>
+            </div>        
+        </section>
+        <section class="language">
+            <div class="wrapper">
+                <h2>Language</h2>
+                <ol class="lang">
+                    <li>English <b>pre-intermediate</b></li>
+                    <li>Russian <b>native</b></li>
+                </ol>
+            </div>      
+        </section>
+        <section class="contacts">
+            <div class="wrapper">
+                <h2>Contacts</h2><a id="contact"></a>
+                <div class="contact-me">
+                    <div class="contact-me__block">
+                        <a href="mailto:yaubasarova.93">email: yaubasarova.93@mail.ru</a>
+                        <a href="mailto:79373491649">tel: 8 937 349 16 49</a>
+                    </div>
+                    <!-- <form action="">
+                        <input type="text" name="userName" id="userNameForm" placeholder="Ваше имя">
+                        <textarea name="review" id="reviewForm" cols="30" rows="10" placeholder="Отзыв"></textarea>
+                        <input type="submit" value="Отправить отзыв">
+                        <div class="approval-block">
+                            <input type="checkbox" name="approval" id="approvalForm">
+                        </div>                
+                    </form> -->
                 </div>
             </div>
-          </div>
-        </div>
-    </main>     
-    <section class="about-me">
-        <div class="wrapper"><a id="about"></a>
-            <h2>About me</h2>
-            <p>My name is Fairuza. Im future frontend Developer. When I styy in 11 st, I did my firsr web-site for my school in my village. I used to basic HTML anf CSS.  
-                And now I study in Rolling Scopes School and I so happy! This course is very hard, but more interesting. I like do layot, animate web-page and do responsive design!
-                I want to Frontend Developer and learn Vue js.
-            </p>
-        </div> 
-    </section>
-    <section class="skills">
-        <div class="wrapper"><a id="skills"></a>
-            <h2>Skills</h2>
-          <ul class="skills-block">
-            <li>HTML <img src="img/icon/html.svg" alt="html icon"></li>
-            <li>CSS <img src="img/icon/css.svg" alt="css"></li>
-            <li>JavaScript <img src="img/icon/javascript.svg" alt="js"></li>
-            <li>Figma <img src="img/icon/figma.svg" alt="figma"></li>
-            <li>PixelPerfect <img src="img/icon/pp.webp" alt="pp"></li>
-            <li>Git/GitHub <img src="img/icon/github.svg" alt="icons"></li>
-            <li>Bootstrup <img src="img/icon/bootstrap.svg" alt="icons"></li>
-            <li>TypeScript <img src="img/icon/ts-logo-128.svg" alt="icons"></li>
-          </ul>           
-        </div>        
-    </section>
-    <section class="projects">
-        <div class="wrapper">
-            <div class="myproject"><a id="project"></a>
-                <h2>My project</h2>
-                <div class="project-block">
-                  <div class="project-card">
-                    <h3>Shelter</h3>
-                    <div class="screen">
-                        <a href="https://fairuzajs.github.io/shelter/" target="_blank"><img src="img/shelter.png" alt="web-page"></a>
-                        <details>
-                            <summary>About project</summary>
-                            <p>Responsive web-design, burger-menu, slider, pagination, popup, </p>
-                        </details>
-                       
+            
+        </section>
+        <footer>
+            <div class="wrapper">
+                <div class="footer">
+                    <div class="link">       
+                            <ul class="my-link">
+                                <li><a class="github" href="https://github.com/Fairuzajs?tab=repositories" target="_blank"><img src="img/icon/github.svg" alt="github"></a></li>
+                                <li><a class="rss" href="https://rs.school/js-stage0/" target="_blank" ><img src="img/icon/rs_school_js.svg" alt="rsschool"></a></li>
+                                <li>
+                                    <ul class="my-link-social">
+                                        <li><a href="https://discordapp.com/users/1056131555124330536/ " target="_blank"><img class="link-soc" src="img/icon/discord-red.svg" alt="discord"></a></li>
+                                        <li><a href="https://t.me/fairuza2203" target="_blank"><img class="link-soc" src="img/icon/tg.svg" alt="telegram"></a></li>
+                                        <li><a href="https://wa.me/79373491649" target="_blank"><img class="link-soc" src="img/icon/wu.svg" alt="git"></a></li> 
+                                    </ul>
+                                </li>
+                            </ul>                          
                     </div>
-                  </div>
-                  <div class="project-card">
-                    <h3>Plants</h3>
-                    <div class="screen">
-                        <a href="https://fairuzajs.github.io/plants/" target="_blank"><img src="img/plants.png" alt="web-page"></a>
-                        <details>
-                            <summary>About project</summary>
-                            <p>Responsive web-design, options, modal-window</p>
-                        </details>
-                        
-                    </div>
-                  </div>
-                  <div class="project-card">
-                    <h3>Virtual Keyboard</h3>
-                    <div class="screen">
-                        <a href="https://fairuzajs.github.io/virtual-keyboard/" target="_blank"><img src="img/v-keyboard.png" alt="web-page"></a>
-                        <details>
-                            <summary>About project</summary>
-                            <p>Vurtual keyboard withot html tags with js</p>
-                        </details>
-                        
-                    </div>
-                  </div>
-                  <div class="project-card">
-                    <h3>Aperture</h3>
-                    <div class="screen">
-                        <a href="http://m93734mx.beget.tech/pages/task2/task2.html" target="_blank"><img src="img/aperture.png" alt="web-page"></a>
-                        <details>
-                            <summary>About project</summary>
-                            <p>Landing page, responsive web-design</p>
-                        </details>
-                       
-                    </div>
-                  </div>
-                  <div class="project-card">
-                    <h3>Sergio Pizza</h3>
-                    <div class="screen">
-                        <a href="http://m93734mx.beget.tech/pages/finalWork/finalWork.html" target="_blank"><img src="img/pizza.png" alt="web-page"></a>
-                        <details>
-                            <summary>About project</summary>
-                            <p>Responsive web-design, basket buy, slider, modal-form</p>
-                        </details>
-                       
-                    </div>
-                  </div>
-                  <div class="project-card">
-                    <h3>Britlex</h3>
-                    <div class="screen">
-                        <a href="http://m93734mx.beget.tech/pages/task4/task4.html" target="_blank"><img src="img/britlex.png" alt=""></a>
-                        <details>
-                            <summary>About project</summary>
-                            <p>Responsive web-design, flex-box and grid layot, burger-menu</p>
-                        </details>
-                        
-                    </div>
-                  </div>
-               </div>
-            </div>
-        </div>      
-    </section>
-    <section class="code">
-        <div class="wrapper">
-            <h2>Code</h2><a id="code"></a>
-            <div class="code-block">
-                <p>In this kata you should simply determine, whether a given year is a leap year or not. In case you don't know the rules, here they are:</p>
-                    <ul>
-                        <li>years divisible by 4 are leap years</li>
-                        <li>but years divisible by 100 are not leap years</li>
-                        <li>but years divisible by 400 are leap years.</li>
-                    </ul>         
-                    <pre>
-                        function isLeapYear(year) {
-                            if (year % 100 !== 0 && year % 4 === 0 || year % 400 === 0) {
-                              return true;
-                            } else {
-                              return false;
-                            }
-                          }
-                    </pre>
-            </div>
-        </div>   
-    </section>
-    <section class="education">
-        <div class="wrapper">
-            <h2>Education</h2><a id="education"></a>
-            <ol class="edu">
-              <li><a href="https://rs.school/js-stage0/">RS School</a><b> "JavaScript/Front-end stage 0"</b></li>
-              <li><a href="https://rs.school/js/">RS School</a><b> "JavaScript/Front-end"</b></li>
-              <li><a href="https://en.tsu.ru">TGU</a><b> "WEB-programmer from scratch to the first projects"</b></li>
-              <li><a href="https://rusoil.net/ru/">USPTU</a><b> geologist</b></li>
-            </ol>
-        </div>        
-    </section>
-    <section class="language">
-        <div class="wrapper">
-            <h2>Language</h2>
-            <ol class="lang">
-                <li>English <b>pre-intermediate</b></li>
-                <li>Russian <b>native</b></li>
-            </ol>
-        </div>      
-    </section>
-    <section class="contacts">
-        <div class="wrapper">
-            <h2>Contacts</h2><a id="contact"></a>
-            <div class="contact-me">
-                <div class="contact-me__block">
-                    <a href="mailto:yaubasarova.93">email: yaubasarova.93@mail.ru</a>
-                    <a href="mailto:79373491649">tel: 8 937 349 16 49</a>
+                    <p>	&copy; Khuzhakhmetova Fairuza. Ufa 2023</p>
                 </div>
-                <!-- <form action="">
-                    <input type="text" name="userName" id="userNameForm" placeholder="Ваше имя">
-                    <textarea name="review" id="reviewForm" cols="30" rows="10" placeholder="Отзыв"></textarea>
-                    <input type="submit" value="Отправить отзыв">
-                    <div class="approval-block">
-                        <input type="checkbox" name="approval" id="approvalForm">
-                    </div>                
-                </form> -->
             </div>
-        </div>
-        
-    </section>
-    <footer>
-        <div class="wrapper">
-            <div class="footer">
-                <div class="link">       
-                        <ul class="my-link">
-                            <li><a class="github" href="https://github.com/Fairuzajs?tab=repositories" target="_blank"><img src="img/icon/github.svg" alt="github"></a></li>
-                            <li><a class="rss" href="https://rs.school/js-stage0/" target="_blank" ><img src="img/icon/rs_school_js.svg" alt="rsschool"></a></li>
-                            <li>
-                                <ul class="my-link-social">
-                                    <li><a href="https://discordapp.com/users/1056131555124330536/ " target="_blank"><img class="link-soc" src="img/icon/discord-red.svg" alt="discord"></a></li>
-                                    <li><a href="https://t.me/fairuza2203" target="_blank"><img class="link-soc" src="img/icon/tg.svg" alt="telegram"></a></li>
-                                    <li><a href="https://wa.me/79373491649" target="_blank"><img class="link-soc" src="img/icon/wu.svg" alt="git"></a></li> 
-                                </ul>
-                            </li>
-                        </ul>                          
-                </div>
-                <p>	&copy; Khuzhakhmetova Fairuza. Ufa 2023</p>
-            </div>
-        </div>
-  </footer>
+      </footer>
+
+    
 </body>
 </html>
